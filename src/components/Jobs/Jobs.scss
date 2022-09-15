@@ -1,0 +1,63 @@
+.ableton__jobs {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        aspect-ratio: 1 / 1;
+        width: 50%;
+        object-fit: cover;
+
+        @media screen and (max-width: 1250px) {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+        }
+    }
+
+    .text-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2rem;
+        background-color: var(--color-light-blue);
+        padding: 8.33333vw;
+
+        .text {
+            font-size: 1.7rem;
+            line-height: 2.5rem;
+            color: var(--color-black);
+            
+            @media screen and (max-width: 1120px) {
+                font-size: 1.1rem;
+                line-height: 2rem;
+            }
+        }
+
+        a {
+            font-size: 1.7rem;
+            color: var(--color-deep-blue);
+            text-decoration: none;
+
+            &::after {
+                content: " >"
+            }
+
+            @media screen and (max-width: 1120px) {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media screen and (max-width: 1250px) {
+            width: 40px;
+            row-gap: 1rem;
+        }
+
+        @media screen and (max-width: 1250px) {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1250px) {
+        flex-direction: column;
+    }
+}

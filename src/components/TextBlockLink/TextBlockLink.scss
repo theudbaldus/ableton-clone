@@ -1,0 +1,49 @@
+.ableton__textblocklink {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .textblocklink-container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+
+        .strong-text {
+            font-size: 1.7rem;
+            line-height: 2.5rem;
+            color: var(--color-black);
+
+            span {
+                color: var(--color-deep-blue);
+                cursor: pointer;
+            }
+
+            @media screen and (max-width: 1120px) {
+                font-size: 1.1rem;
+                line-height: 2rem;
+            }
+        }
+
+        .text {
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 1.5rem;
+
+            @media screen and (max-width: 1120px) {
+                font-size: .9rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 1250px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}

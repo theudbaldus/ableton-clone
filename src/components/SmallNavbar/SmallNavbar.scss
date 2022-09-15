@@ -1,0 +1,30 @@
+.ableton__smallnavbar {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    padding: 1.5rem 2rem;
+
+    .link {
+        font-size: 1rem;
+        color: var(--color-black);
+        text-decoration: none;
+
+        @media screen and (max-width: 1250px) {
+            font-size: .8rem;
+        }
+    }
+
+    .selected-link {
+        font-size: 1rem;
+        color: var(--color-orange);
+        text-decoration: none;
+
+        @media screen and (max-width: 1250px) {
+            font-size: .8rem;
+        }
+    }
+
+    @media screen and (max-width: 1250px) {
+        column-gap: 1rem;
+    }
+}
